@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-	var API_KEY = "AIzaSyCWDdo6NIuLxbImrY3joCeYmTiwOLEaa98"
+	var API_KEY = "AIzaSyBdhdSIQxa6chUqY9rPVsdGcmXvkpqgutU"
 	
 	var video = ''
 	
@@ -31,8 +31,15 @@ $(document).ready(function(){
 				$.get("https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" + videoId + "&fields=items/snippet/title,items/snippet/description,items&key=" +key,function(abc){
 					
 					abc.items.forEach(item=>{listitem = `<li id= ${item.id} >${item.snippet.title}</li> 
-					<button>Add to playlist</button>` 
-					$("#unorderedlist").append(listitem)
+					<button onclick= "funcplaylist()">Add to playlist</button>`
+					$("#unorderedlist").append(listitem) 
+					// document.getElementById("button-"+item.id).addEventListener("click",function(e){
+						
+					// })
+					function funcplaylist(){
+						litem = `<li>constant</li>`
+									$("#listofplaylist").append(litem)
+					}
 					document.getElementById(item.id).addEventListener("click",function(e){
 						$("#bigvideoplayer").empty()
 						bigvideo= `<iframe width="720" height="515" src="http://www.youtube.com/embed/${e.target.id}" frameborder="0" allowfullscreen></iframe>`
