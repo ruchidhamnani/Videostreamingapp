@@ -1,0 +1,43 @@
+/* html {
+    height: 100vh;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  } */
+#videoid {
+    border: 0px solid #ccc;
+    height: 200px;
+    width: 500px;
+    overflow-y: auto;
+    background-color: lightcoral;
+    color: black;
+    font-weight: bold;
+  }
+  #playlist{
+    margin: 10px;
+    margin-top: 210px;
+    width: 400px;
+      background-color: #ffd761;
+      color:black;
+      font-weight: bold;
+      float: left;
+      display: inline;
+      overflow-x: auto;
+      /* width: 150px; */
+  }
+  /* #unorderedlist{
+    width: 500px;
+  } */
+  #container{
+    width: 500px;
+    margin-left: 20px;
+      display: inline;
+      /* flex-direction: column; */
+      float: left;
+  }
+  html{
+    background-color: burlywood;
+  }

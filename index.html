@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<style>
+		
+		</style>
 		<title>Video Streaming</title>
+		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+		
 	</head>
 	<body>
-		
-		<div class="container">
+		<div id="playlist" style="display: none;"> 
+			<h3 style="text-align: center;">Playlist</h3>
+			<ul id="listofplaylist">
+
+		   </ul>
+		</div>
+
+		<div id="container">
 			<br>
-			<h1>video list</h1>
+			<h1>Youtube  Video Player</h1>
 			<br>
 			<form id="form">
-				<div class="form-group">
+				<div  class="autocomplete form-group" >
 					<input type="text" class="form-control" id="search">
 				</div>
 				<div class="form-group">
@@ -23,13 +34,10 @@
 			<div id="bigvideoplayer">
 
 			</div>
-			<div id="playlist">
-				<ul id="listofplaylist">
-			   </ul>
-			</div>
+			
 			<div class="row">
 				<div class="col-md-12">
-					<div id= "videoid">
+					<div id= "videoid" style="display:none">
 					<ul id="unorderedlist">
 					
 					</ul>
